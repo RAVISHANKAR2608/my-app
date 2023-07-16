@@ -1,3 +1,6 @@
+import { AppService } from './app.service';
 export declare class AppController {
-    getAllIncomeReports(): any[];
+    private readonly appService;
+    constructor(appService: AppService);
+    getHello(): string;
 }
